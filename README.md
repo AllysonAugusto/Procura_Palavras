@@ -37,9 +37,4 @@ Cada planta será associada a:
 - Ilustrações, ícones ou animações que reforcem sua representação visual
 - Narrativas e histórias culturais (com validação comunitária)
 
-### Considerações Éticas:
-- Todo o conteúdo será tratado com **respeito e cuidado**, evitando a apropriação indevida
-- O projeto prevê **consulta e validação com lideranças e mestres tradicionais**
-- O acesso ao conhecimento será promovido com base em princípios de **ética e reciprocidade**
-
 ---
