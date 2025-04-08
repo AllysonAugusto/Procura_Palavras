@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    color: #fff;
+}
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 30px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-weight: bold;
+
+
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: 700;
+    filter: drop-shadow(0 0 5px #09001d);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 2s;
+}
+
+
+.navbar a:hover, 
+.navbar a.active{
+    color: #08a0d3;
+}
+
+.main {
+    min-height: 100vh;
+    background: url('https://portaltelemedicina.com.br/wp-content/uploads/2023/10/ia-na-saude.jpg') no-repeat;
+    background-size: cover;  
+    background-position: center;
+    background-attachment: fixed;
+    transition: .3s ease;
+}
+
+.main.active{
+    filter:blur(15px);
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.inicio{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.inicio-conteudo{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+
+
+}
+
+.inicio-conteudo h1{
+    font-size: 78px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0,0,0, .3);
+}
+
+.inicio-conteudo p{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0,0,0, .3);
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0,0,0, .3);
+}
+
+
+.inicio-conteudo .start-btn{
+    width: 190px;
+    height: 55px;
+    background: #08a0d3;
+    border-radius: 10px 10px 10px 10px; 
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.inicio-conteudo .start-btn:hover{
+    background: #09001d;
+    box-shadow: none;
+}
+
+.info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 6px;
+    padding: 20px 30px;
+    text-align: center;
+    opacity: 0;  /* Oculta inicialmente */
+    pointer-events: none; /* Desabilita interações */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Quando o pop-up estiver ativo */
+.info.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.info h2 {
+    font-size: 32px;
+    color: #055b8d;
+    margin-bottom: 30px;
+}
+
+.info-text {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 8px 0;
+    text-align: justify;
+}
+
+
+.btn-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.info-btn {
+    background: #055b8d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-btn:hover {
+    background: #033d5b;
+    cursor: pointer;
+}
+
+.sair-btn {
+    background: #d9534f; 
+}
+
+.sair-btn:hover {
+    background: #c9302c;
+    cursor: pointer;
+}
