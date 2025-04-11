@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login | LIAS QUIZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=328,h=320,fit=crop/YBgrPB6GDoize0BM/redondo-5-YrDljz6920ieay6K.png">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">JurísFácil</h2> <!-- Logo -->
+    </header>
+    
+    <div class="background"></div>
+
+    <div class="container"> <!-- Container para Centraliza os elementos da tela -->
+        
+        <div class="item"> <!-- Seção da esquerda com boas-vindas e redes sociais -->
+            <div class="text-item"> <!-- Caixa de texto (Bem vindo e paragrafo) -->
+                <h2>Bem-vindo<br></h2>
+                <p>Explore o universo dos Saberes Indígenas com jogos interativos que valorizam a cultura, o conhecimento ancestral e a diversidade do nosso país.</p>
+
+
+                <div class="rede-social"> <!-- Ícones para redes sociais -->
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seção de Login -->
+        <div class="secao-login"> <!-- Área do formulário de login -->
+            <div class="form-box login"> <!-- Box formulário -->
+                <form method="POST" action=""> 
+                    <h2>Entrar</h2> 
+
+                    <div class="entrada-box">
+                        <span class="icon"><i class='bx bxs-envelope'></i></span> 
+                        <input type="email" id="email" required> 
+                        <label for="email" class="label-entrada">Email</label> 
+                    </div>
+
+                    <div class="entrada-box"> 
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span> 
+                        <input type="password" id="senha" required> 
+                        <label for="senha" class="label-entrada">Senha</label> 
+                    </div>
+
+                    <div class="lembrar-senha">
+                        <label><input type="checkbox"> Lembrar-me</label> 
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <button class="botao">Entrar</button> <!-- Botão de envio do formulário -->
+
+                    <div class="criar-conta"> <!-- Link para registro de nova conta -->
+                        <p>Não tem uma conta? <a href="http://127.0.0.1:5500/Projeto_LIAS/tela_cadastro/registrar.html" class="registro-link">Registrar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

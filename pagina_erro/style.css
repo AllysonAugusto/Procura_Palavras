@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+
+* {
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+
+
+}
+
+
+.container{
+
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), #122d77), url(https://img.freepik.com/vetores-gratis/cena-com-ilha-ligado-a-oceanicos_1308-28687.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 6%;
+    display: flex;
+    flex-direction: column; /*botões para baixo*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container .detalhes{
+
+    text-transform: uppercase;
+
+
+}
+
+
+.container .detalhes h1{
+
+    color: whitesmoke;
+    font-size: 200px;
+    font-weight: 900; /*espessura*/
+    letter-spacing: 10px;
+}
+
+
+.container .detalhes h2{
+
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0 20px;
+}
+
+.container .botao .btn {
+
+    display: inline-block;
+    width: auto; /*botao se ajustar com conteudo*/
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    border-radius: 40px;
+    padding: 10px 20px;
+    margin:20px;
+    transition: all 0.5s;
+
+
+}
+
+
+.container .botao .btn-home{
+
+    color: #122d77;
+    background-color: whitesmoke;
+
+}
+
+.container .botao .btn-contato:hover{
+
+    color: #009688;
+    background-color: whitesmoke;
+
+}
+
+.container .botao .btn-contato:hover{
+
+    color: #122d77;
+    background-color: whitesmoke;
+
+}
+
+
+.container .social-links{
+
+    margin-top: 15px;
+
+
+}
+
+.container .social-links a{
+
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: whitesmoke;
+    margin: 0 4px;
+    transition: all 0.5s;
+
+}
+
+.container .social-links a:hover{
+    background-color: whitesmoke;
+    border-radius: 50%;
+    padding:5px;
+
+}
