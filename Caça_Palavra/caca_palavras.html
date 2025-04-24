@@ -28,20 +28,25 @@
   <div class="container">
     <h1>Caça Palavras - LIAS</h1>
 
-    <!--palavras-->
-    <section id="palavras">
+      <!--palavras-->
+      <section id="palavras">
         <h2>Palavras para encontrar:</h2>
         <ul id="lista-palavras">
-          <li class="palavra-item">Jaborandi</li>
-          <li class="palavra-item">Andiroba</li>
-          <li class="palavra-item">Aroeira</li>
-          <li class="palavra-item">Copaíba</li>
-          <li class="palavra-item">Breu-branco</li>
-          <li class="palavra-item">Unha-de-gato</li>
-          <li class="palavra-item">Carqueja</li>
-          <li class="palavra-item">Pariparoba</li>
+            <li class="palavra-item" data-povo="PATAXÓ">PATAXÓ</li>
+            <li class="palavra-item" data-povo="TUPINAMBÁ">TUPINAMBÁ</li>
+            <li class="palavra-item" data-povo="PATAXÓ HÃ HÃ HÃ">PATAXÓ HÃ HÃ HÃ</li>
+            <li class="palavra-item" data-povo="KIRIRI">KIRIRI</li>
+            <li class="palavra-item" data-povo="TUMBALALÁ">TUMBALALÁ</li>
+            <li class="palavra-item" data-povo="TUXÁ">TUXÁ</li>
+            <li class="palavra-item" data-povo="PANKARARÉ">PANKARARÉ</li>
         </ul>
-    </section>
+      </section>
+
+      <!--feedback box-->
+      <div id="feedback-box" style="display: none;">
+        <button id="close-feedback" onclick="closeButton()">X</button> 
+        <p id="feedback-message"></p>
+      </div>
       
     <!--grid-->
     <div class="caca-palavras">
