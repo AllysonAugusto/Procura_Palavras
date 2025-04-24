@@ -96,13 +96,13 @@ a {
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #2e8b57;
+    color: #283421;
 }
 
 h2 {
     margin-top: 20px;
     font-size: 1.5em;
-    color: #006400;
+    color: #283421;
 }
 
 #lista-palavras {
@@ -117,12 +117,12 @@ h2 {
 }
 
 .palavra-item {
-    border: 2px solid #2ecc71;
+    border: 2px solid #D6C4A7;
     border-radius: 8px;
     padding: 10px 16px;
     font-weight: 600;
-    background-color: #f9fff9;
-    color: #2d3436;
+    background-color: #283421;
+    color: #D6C4A7;
     transition: all 0.3s ease;
 }
 
@@ -139,18 +139,19 @@ h2 {
 }
 
 #resetar-button {
-    background-color: #2ecc71;
-    color: white;
+    background-color: #283421;
+    color: #D6C4A7;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border: 2px solid #D6C4A7; 
 }
 
 #resetar-button:hover{
-    background-color: #27ae60;
+    background-color: #283421;
     
 }
 
@@ -203,7 +204,48 @@ td.selecionado {
     transition: background-color 0.3s ease;
 }
 
+/* Caixa de feedback */
+#feedback-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #283421;
+    color: #D6C4A7;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 35px; 
+    width: 300px; 
+    display: none; 
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #D6C4A7; 
+}
 
+
+/* Estilo para a frase dentro do feedback */
+#feedback-box p {
+    word-wrap: break-word; 
+    white-space: normal; 
+}
+
+/* Botão de fechar (X) */
+#close-feedback {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+}
+
+#close-feedback:hover {
+    color: #f1f1f1;
+}
 
 
   
