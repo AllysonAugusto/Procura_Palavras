@@ -105,6 +105,7 @@ h2 {
     color: #283421;
 }
 
+/*lista palavras*/
 #lista-palavras {
     list-style: none;
     padding: 0;
@@ -125,15 +126,23 @@ h2 {
     color: #D6C4A7;
     transition: all 0.3s ease;
 }
-
+/*lista palavras - hover*/
 .palavra-item:hover {
-    background-color: #e8fce8;
+    background-color: #D6C4A7;
+    color: #283421;
     transform: scale(1.05);
     cursor: pointer;
 }
 
-/*botao reset*/
+/*lista de palavras encontradas*/
+.palavra-encontrada {
+    background-color: #c1ffbd;
+    border-color: #71e971;
+    color: #0f2e0f;
+}
+  
 
+/*botao reset*/
 .buttons{
     margin-top: -160px;
 }
@@ -146,7 +155,7 @@ h2 {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
     border: 2px solid #D6C4A7; 
 }
 
@@ -204,7 +213,14 @@ td.selecionado {
     transition: background-color 0.3s ease;
 }
 
-/* Caixa de feedback */
+/*selecionado mouse*/
+.selecionado {
+    background-color: yellow;
+    font-weight: bold;
+  }
+  
+
+/* caixa de feedback */
 #feedback-box {
     position: fixed;
     top: 50%;
@@ -224,13 +240,13 @@ td.selecionado {
 }
 
 
-/* Estilo para a frase dentro do feedback */
+/* estilo para a frase dentro do feedback */
 #feedback-box p {
     word-wrap: break-word; 
     white-space: normal; 
 }
 
-/* Botão de fechar (X) */
+/* botão de fechar (X) */
 #close-feedback {
     position: absolute;
     top: 10px;
@@ -248,5 +264,4 @@ td.selecionado {
 }
 
 
-  
 
